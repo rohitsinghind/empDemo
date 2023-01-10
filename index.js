@@ -41,7 +41,7 @@ app.post("/createStamp", async (req, res) => {
   console.log(response);
   res.send(response);
 });
-app.get("/getAllStamp", async (req, res) => {
+app.post("/getAllStamp", async (req, res) => {
   const response = await getAllStamp();
   console.log(response);
   res.send(response);
